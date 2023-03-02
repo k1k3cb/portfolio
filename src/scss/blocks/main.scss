@@ -1,0 +1,75 @@
+/* ESTILOS DEL MAIN */
+@use "../mixins/responsive.scss" as *;
+
+.main__title-section {
+	text-align: center;
+	margin-bottom: 100px;
+	@include responsive(laptop) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.main__title{
+	@include responsive(laptop) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+
+.main__portfolio{
+
+	@include responsive(laptop) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+	}
+}
+
+.main__portfolio-card {
+	background-color: var(--secondary-color);
+	padding: 35px;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.main__portfolio-card-img {
+	border: 8px solid var(--text-color);
+	height: 230px;
+	object-fit: cover;
+	border-radius: 10px;
+    margin-bottom: 36px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.main__portfolio-card-footer {
+	background-color: var(--text-color);
+	border-radius: 0 0 20px 20px;
+	padding: 5px 25px;
+	display: flex;
+	justify-content: space-around;	
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.main__portfolio-card-footer-img {
+	width: 40px;
+	
+}
+
+// .main__portfolio-card-footer-img:hover {
+	
+// 	transform: scale(1.2);
+// 	transition: transform .8s;
+	
+// }
+
+
+
+.main__portfolio-card-description{
+
+    margin: 25px 0;
+}

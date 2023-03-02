@@ -1,0 +1,101 @@
+/* ESTILOS DEL FOOTER */
+@use "../mixins/responsive.scss" as *;
+
+.footer__contact {
+	background-color: var(--secondary-color);
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	margin: 0 30px;
+	border-radius: 10px;
+	justify-content: space-between;
+	border: 10px solid var(--bg-color);
+	border-radius: 15px;
+	z-index: 1;
+	position: relative;
+	top: 50px;
+
+	@include responsive(laptop) {
+		width: 65%;
+		margin-left: auto;
+		margin-right: auto;
+		top: 70px;
+	}
+}
+
+.footer__contact-icons {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 70%;
+}
+
+.footer__contact-img {
+	width: 50px;
+	@include responsive(laptop) {
+		width: 80px;
+		padding: 15px 0;
+	}
+}
+
+
+.footer__contact-img:hover {
+	
+	transform: scale(1.2);
+	transition: transform .8s;
+	
+}
+
+
+.footer__bottom {
+	background-color: var(--secondary-color);
+	padding-top: 30px;
+
+	@include responsive(laptop) {
+		display: flex;
+		padding: 100px 50px 50px;
+		align-items: center;
+	}
+}
+
+.footer__logo {
+	margin-bottom: 20px;
+	@include responsive(laptop) {
+		width: 20%;
+	}
+}
+
+.footer__nav {
+	color: var(--text-color);
+	text-align: center;
+	margin-bottom: 20px;
+	@include responsive(laptop) {
+		width: 50%;
+	}
+}
+
+.footer__nav-link {
+	padding: 0 10px;
+}
+
+.footer__social-media {
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	@include responsive(laptop) {
+		width: 15%;
+	}
+}
+
+.footer__social-media {
+	margin-bottom: 20px;
+}
+
+.footer__copyright {
+	margin-bottom: 0;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 12px;
+}

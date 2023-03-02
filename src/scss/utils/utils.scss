@@ -1,0 +1,18 @@
+@use "../mixins/responsive.scss" as *;
+
+.padding {
+	padding: 0 30px;
+
+	@include responsive(laptop) {
+		padding: 0 100px;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.p-text {
+	color: var(--text-color);
+}
+

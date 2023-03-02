@@ -1,0 +1,15 @@
+html {
+}
+body {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--bg-color);
+}
+
+
+body.dark-mode{
+
+	--bg-color:black;
+	
+}
