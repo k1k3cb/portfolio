@@ -32,6 +32,7 @@
 
 .footer__contact-img {
 	width: 50px;
+	transition: transform .8s ;	
 	@include responsive(laptop) {
 		width: 80px;
 		padding: 15px 0;
@@ -41,10 +42,11 @@
 
 .footer__contact-img:hover {
 	
-	transform: scale(1.2);
-	transition: transform .8s;
+	transform: scale(1.2);		
 	
 }
+
+
 
 
 .footer__bottom {
@@ -60,6 +62,9 @@
 
 .footer__logo {
 	margin-bottom: 20px;
+	@include responsive(tablet) {
+		width: 100%;
+	}
 	@include responsive(laptop) {
 		width: 20%;
 	}
